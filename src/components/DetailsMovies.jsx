@@ -37,7 +37,7 @@ const DetailsMovies = () => {
     return (
       <Container className="text-white">
         <div className="text-center my-3">
-          <img src={film.Poster} width={300} height={300} alt="" />
+          <img src={film.Poster} width={450} height={450} alt="" />
         </div>
         <h1>{film.Title}</h1>
         <p>{film.Plot}</p>
