@@ -1,5 +1,6 @@
 import { Component } from "react";
 import Card from "./Card";
+import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class Main extends Component {
@@ -54,24 +55,28 @@ class Main extends Component {
 
   render() {
     return (
-      <div className="container-fluid ms-4" style={{ marginBottom: "5rem" }}>
+      <Container className=" ms-4" style={{ marginBottom: "5rem" }}>
         <main>
-          <section>
-            <h4 className="mb-2 fs-6 text-white"> Lord of The Ring</h4>
-            <div className="row mb-5 ">
-              {this.state.film1.length !== 0 && (
-                <Card film={this.state.film1[0]} key={this.state.film1[0].imdbId}></Card>
-              )}
-              ;
-              {this.state.film1.length !== 0 && (
-                <Card film={this.state.film1[2]} key={this.state.film1[2].imdbId}></Card>
-              )}
-              ;
-              {this.state.film1.length !== 0 && (
-                <Card film={this.state.film1[1]} key={this.state.film1[1].imdbId}></Card>
-              )}
-              ;
-            </div>
+          <Container>
+            <section>
+              <h4 className="mb-2 fs-6 text-white"> Lord of The Ring</h4>
+              <div className="row mb-5 ">
+                {this.state.film1.length !== 0 && (
+                  <Card film={this.state.film1[0]} key={this.state.film1[0].imdbId}></Card>
+                )}
+                ;
+                {this.state.film1.length !== 0 && (
+                  <Card film={this.state.film1[2]} key={this.state.film1[2].imdbId}></Card>
+                )}
+                ;
+                {this.state.film1.length !== 0 && (
+                  <Card film={this.state.film1[1]} key={this.state.film1[1].imdbId}></Card>
+                )}
+                ;
+              </div>
+            </section>
+          </Container>
+          <Container>
             <section>
               <h4 className="mb-2 fs-6 text-white">Iron man</h4>
               <div className="row mb-5 gx-1">
@@ -89,18 +94,28 @@ class Main extends Component {
                 ;
               </div>
             </section>
-          </section>
-          <h4 className="mb-2 fs-6 text-white">The Hobbit</h4>
-          <div className="row mb-5 gx-1">
-            {this.state.film3.length !== 0 && <Card film={this.state.film3[0]} key={this.state.film3[0].imdbId}></Card>}
-            ;
-            {this.state.film3.length !== 0 && <Card film={this.state.film3[1]} key={this.state.film3[1].imdbId}></Card>}
-            ;
-            {this.state.film3.length !== 0 && <Card film={this.state.film3[2]} key={this.state.film3[2].imdbId}></Card>}
-            ;
-          </div>
+          </Container>
+          <Container>
+            <section>
+              <h4 className="mb-2 fs-6 text-white">The Hobbit</h4>
+              <div className="row mb-5 gx-1">
+                {this.state.film3.length !== 0 && (
+                  <Card film={this.state.film3[0]} key={this.state.film3[0].imdbId}></Card>
+                )}
+                ;
+                {this.state.film3.length !== 0 && (
+                  <Card film={this.state.film3[1]} key={this.state.film3[1].imdbId}></Card>
+                )}
+                ;
+                {this.state.film3.length !== 0 && (
+                  <Card film={this.state.film3[2]} key={this.state.film3[2].imdbId}></Card>
+                )}
+                ;
+              </div>
+            </section>
+          </Container>
         </main>
-      </div>
+      </Container>
     );
   }
 }

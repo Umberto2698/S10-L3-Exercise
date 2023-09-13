@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Container } from "react-bootstrap";
 
 class Footer extends Component {
   render() {
@@ -20,47 +21,49 @@ class Footer extends Component {
             </button>
           </div>
           <div className="mb-3">
-            <div className="row row-cols-4 gy-2">
-              <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
-                Audio and Subtitles
+            <Container>
+              <div className="row row-cols-4 gy-2">
+                <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
+                  Audio and Subtitles
+                </div>
+                <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
+                  Audio Description
+                </div>
+                <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
+                  Help Center
+                </div>
+                <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
+                  Gift Cards
+                </div>
+                <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
+                  Media Center
+                </div>
+                <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
+                  Investor Relations
+                </div>
+                <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
+                  Jobs
+                </div>
+                <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
+                  Terms of Use
+                </div>
+                <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
+                  Privacy
+                </div>
+                <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
+                  Legal Notices
+                </div>
+                <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
+                  Cookie Preferences
+                </div>
+                <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
+                  Corporate Information
+                </div>
+                <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
+                  Contact US
+                </div>
               </div>
-              <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
-                Audio Description
-              </div>
-              <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
-                Help Center
-              </div>
-              <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
-                Gift Cards
-              </div>
-              <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
-                Media Center
-              </div>
-              <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
-                Investor Relations
-              </div>
-              <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
-                Jobs
-              </div>
-              <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
-                Terms of Use
-              </div>
-              <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
-                Privacy
-              </div>
-              <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
-                Legal Notices
-              </div>
-              <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
-                Cookie Preferences
-              </div>
-              <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
-                Corporate Information
-              </div>
-              <div className="col text-white-50" style={{ fontSize: "0.6rem" }}>
-                Contact US
-              </div>
-            </div>
+            </Container>
           </div>
           <div className="mb-2">
             <button className="btn rounded-0 btn-outline-secondary text-white-50 text-center">Service Code</button>

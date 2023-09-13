@@ -7,13 +7,13 @@ import { Container, Navbar, NavDropdown, Form, Button } from "react-bootstrap";
 class Header extends Component {
   render() {
     return (
-      <div className="container-fluid ms-4">
+      <div className="container">
         <header className="d-flex mb-3 px-3">
           <div className="d-flex w-100 align-items-center ">
             <div className="d-flex align-items-center me-auto">
               <h1 className="me-3 fs-3 text-white">TV Shows</h1>
               <Navbar expand="xs">
-                <Container fluid>
+                <Container>
                   <Button
                     className="roundend-0 bg-black"
                     variant="outline-secondary"

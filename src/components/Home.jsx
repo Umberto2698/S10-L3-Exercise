@@ -11,7 +11,7 @@ import Logo from "../assets/logo.png";
 class Home extends Component {
   render() {
     return (
-      <div style={{ maxWidth: "100%" }}>
+      <div>
         <Navbar expand="md" className="mb-2" style={{ background: "linear-gradient(to bottom, black, #141414)" }}>
           <Container>
             <Navbar.Brand href="#">
