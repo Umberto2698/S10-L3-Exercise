@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Container, ListGroup } from "react-bootstrap";
 import { useParams } from "react-router-dom";
+import AddComment from "./AddComment";
+import CommentsList from "./CommentsList";
 
 const DetailsMovies = () => {
   const params = useParams();
@@ -89,6 +91,8 @@ const DetailsMovies = () => {
             </div>
           </ListGroup.Item>
         </ListGroup>
+        <CommentsList commentsList={comments} setCommentList={setComments}></CommentsList>
+        <AddComment movieId={params.movieId} commentsList={comments} setCommentList={setComments}></AddComment>
       </Container>
     );
   }
