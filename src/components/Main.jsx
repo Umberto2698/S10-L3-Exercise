@@ -1,5 +1,5 @@
 import { Component } from "react";
-import Card from "./Card";
+import Card from "./Cards";
 import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 

@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 class Footer extends Component {
   render() {
     return (
-      <div id="footer" className="container">
+      <div id="footer" className="container bottom-0">
         <div className="d-flex flex-column">
           <div className="d-flex mb-1">
             <button className="btn text-white-50 fs-5 ps-0">
